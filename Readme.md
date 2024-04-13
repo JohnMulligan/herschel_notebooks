@@ -1,37 +1,27 @@
 # Herschel ipynb
 
-The intention of this repository is to stage formalizations of the calculations regularly made by the Herschels in the process of their astronomical work.
+The original intention of this repository was to stage formalizations of the calculations regularly made by the Herschels in the process of their astronomical work. However, the project has since grown, as I have been given access to digitizations of the Herschel collections held by the RAS and the UT Austin Ransom Center.
 
-## Abstract
+However, the projects are still tightly related. I will therefore articulate the two reamde's (NS) here.
 
-In order to
+## The original 'Notebooks' project
 
-1. prepare for and and perform their observations, and
-1. post-process the data gathered during these observations (for instance, in order to ready them for publication),
+For a conference in York, I created a Python Jupyter Notebook that demonstrated the reproducibility of Caroline Herschel's work. to my mind, the Herschel Archivie is *the* ideal linked data project for archivists, as it was the origin of modern data science. That's a big claim, but it's true.
 
-they had to perform many calculations and data-analytical operations. As a result, there are affordances in their archives for
+Read [that Readme here](notebooks.md).
 
-1. the formal expression of the procedures they regularly employed in their data-based astronomical work, and
-1. the reproduction of the operations they performed on the data attendant to particular observations.
+## The linked data archival project
 
-Our ultimate goal is to enable
+I have, since, attempted to realize the vision of a linked data version of the Herschel archive.
 
-1. the scaled reproduction of the intellectual labor that made their observatories work &
-1. the functional re-integration of their archives, 
+Initially, I used Omeka-S to produce a linked data archive of the project. However:
 
-All with reference to the original archival documents.
+1. Its IIIF image server, either because of threading or some other internal issues, would not tile properly.
+1. Without using the Custom Ontology plugin (which there is reason to be skeptical of), I could not achieve the linked data effects I wanted.
 
-## Current state
+I then transitioned to Intranda's Goobi viewer & workflow pipelines, and have been quite impressed.
 
-A small collection of works in two different archives has been digitized. We are now pushing these to a platform that will present the media back out in a IIIF-compliant format, and preparing to link the data on a page-region basis to observations, calculations, and discoveries in external authority records (some of which already exist).
+1. I have decided not to down-convert my TIF's but rather simply to give my viewer enough RAM to tile the images live in its IIIF server, and have been very impressed by its performance.
+1. I have found its balance between customizability and adherence to standards, in principle, to be ideal. This project has to take a long view, and so a system that prioritizes interoperability is key.
 
-We currently have [one example](Ransom_M0672_36_25_p19__RAS_C1_1_2_p66.ipynb), specifically, a *python notebook* that
-
-1. formalizes a method in the Ransom's M0672.36.25 file and
-1. executes it on the data from the RAS's C1/1.2, as outlined in the above.
-
-This shows a specific -- but admittedly insufficiently modular -- example of how by recording the Herschel archives on a granular level using today's information science standards, the methods used in the Herschel archive can be encoded, archived, and re-enacted according to the standards of scientific reproducibility that are now current.
-
-## Future state
-
-Eventually, it should be possible to make code like that provided above operationalizable across archival data that is appropriately categorized. This repository will stage that code prior to any publication/archival reintegration.
+[My ongoing notes on my work with these Intranda systems is here](linked_data).
