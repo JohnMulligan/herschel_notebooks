@@ -24,4 +24,4 @@ I then transitioned to Intranda's Goobi viewer & workflow pipelines, and have be
 1. I have decided not to down-convert my TIF's but rather simply to give my viewer enough RAM to tile the images live in its IIIF server, and have been very impressed by its performance.
 1. I have found its balance between customizability and adherence to standards, in principle, to be ideal. This project has to take a long view, and so a system that prioritizes interoperability is key.
 
-[My ongoing notes on my work with these Intranda systems is here](linked_data).
+[My ongoing notes on my work with these Intranda systems is here](linked_data.md).
